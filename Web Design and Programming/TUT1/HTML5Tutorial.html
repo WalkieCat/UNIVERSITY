@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>u3284513 - Minh Nguyen</title>
+    </head>
+    <body>
+        <h3>Shortcuts to section 
+            <a href="#section-1"> Section 1</a>
+            <a href="#section-2"> Section 2</a>
+            <a href="#section-3"> Section 3</a>
+            <a href="#section-4"> Section 4</a>
+            <a href="#section-5"> Section 5</a>
+            and
+            <a href="#section-6"> Section 6</a>
+        </h3>
+
+        <!--Headings-->
+        <section id="section-1">
+            <header>1. Heading Elements</header>
+            <h1> This is a h1 heading</h1>
+            <h3> This is a h3 heading</h3>
+            <h6> This is a h6 heading </h6>
+        </section>
+
+        <!--Paragraphs-->
+        <section id="section-2">
+            <header> 2. Paragraph, line break, block div and link</header>
+            <p> This is a <br /> paragraph <br /> with line breaks</p>
+            <p> this is a paragraph without line breaks</p>
+            <div> This line uses block &lt;div&gt; element</div>
+            <div> This line also uses &lt;div&gt; element</div>
+            <a href="https://www.canberra.edu.au/"> Link to UC website</a>
+            <br>
+        </section>
+
+        <!--Format-->
+        <section id="section-3">
+            <header>3. Text Format</header>
+            <pre>
+                Preformatted text 
+                using HTML5 pre element
+            </pre>
+            <p>This is <b>bold</b>, <i>italics</i>, <em>emphasized</em> using b, i and em </p>
+            <h3>this uses <mark>mark</mark> and <ins>ins</ins> element</h3>
+            <h3>this uses <sup>sup</sup> and <sub>sub</sub> elements</h3>
+            <br>
+        </section>
+
+        <!--Images-->
+        <section id="section-4">
+            <header>4. Figure, img, video and iframe for YouTube</header>
+            <figure>
+                <img width="100" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" />
+                <figcaption>Fig 1: HTML5 logo</figcaption>
+            </figure>
+            <br />
+
+            <video width="300" loop muted autoplay="autoplay" preload="auto">
+            <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" 
+                    type="video/mp4"> Your browser does not support HTML5 video.
+            </video>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/XMUYoiUlutM"
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+            <br>
+        </section>
+
+        <!--input element-->
+        <section id="section-5">
+            <header>5. Input Elements</header>
+
+            <p>Input element:</p>
+            <span>Enter your name: </span>
+            
+            <input>
+            <p>Input with place holder</p>
+            <input placeholder="Enter your password:" />
+
+            <p>Input with value</p>
+            <input value="Enter your password: " />
+
+            <p>Input with value and disabled attributes</p>
+            <input value="Enter your password" disabled />
+
+            <p>Input with readonly</p>
+            <input value="Enter your password:" readonly />
+
+            <p>calendar</p>
+            <input type="date" />
+
+            <p>check box</p>
+            <input type="checkbox" />
+
+            <p>radio buttons</p>
+            <input type="radio" /> Red
+            <input type="radio" /> Blue
+            <input type="radio" /> Green
+
+            <p>buttons grouped by color</p>
+            <input type="radio" name="color" /> Red
+            <input type="radio" name="color" /> Blue
+            <input type="radio" name="color" /> Green
+            <br>
+        </section>
+
+        <!--Table and Lists -->
+        <section id="section-6">
+            <header>6. Table, unordered list, ordered list and dropdown list</header>
+            <p>Table</p>
+            Page 11 of 13
+            <table border="1">
+                <tr>
+                    <th>Tutorials</th>
+                    <th>Assignment 1</th>
+                    <th>Assignment 2</th>
+                </tr>
+                <tr>
+                    <td>40%</td>
+                    <td>30%</td>
+                    <td>30%</td>
+                </tr>
+            </table>
+            
+            <p>Unordered List</p>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ul>
+            
+            <p>Ordered List</p>
+            <ol>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ol>
+            
+            <p>Dropdown lists</p>
+            <select name="phones">
+                <option value="iphone">iPhone</option>
+                <option value="ss">Samsung</option>
+            </select>
+            <select name="phones">
+                <option disabled selected value>Select an option</option>
+                <option value="iphone">iPhone</option>
+                <option value="ss">Samsung</option>
+            </select>
+        </section>
+    </body>
+</html>
