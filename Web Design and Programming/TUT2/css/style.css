@@ -1,0 +1,102 @@
+body {
+    /*font family arial style sans-serif size 18*/
+    font: 18px arial, sans-serif
+}
+
+article {
+    background-image: url(../image/bg4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 1200px;
+    margin: 20px 0px 0px 12px;
+}
+
+#main-header {
+    font: normal 76px impact;
+    color: lightblue;
+    text-align: center;
+    background-color: #0a0538;
+
+    height: 288px;
+
+    background-image: url(../image/bg3.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-shadow: 3px 2px black;
+}
+
+header {
+    color: orange;
+    font-size: 24px;
+}
+
+h1 {
+    padding-top: 36px;
+    font-size: 24px;
+}
+
+h1, p, a {
+    color: white;
+}
+
+video {
+    width: 100%;
+}
+
+h1, h2, p {
+    padding-left: 20px;
+}
+
+.div-login {
+    color: white;
+    padding-left: 20px;
+}
+
+input {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+input[type=button] {
+    background-color: red;
+    color: white;
+}
+
+.container {
+    position: relative;
+}
+
+div.container {
+    width: 740px;
+}
+
+.inner-text {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px
+}
+
+figure {
+    width: 400px;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+}
+
+figcaption {
+    background: linear-gradient(to top, brown, lightgrey, navy);
+}
+
+.container:hover > .inner-text {
+    visibility: hidden;
+}
