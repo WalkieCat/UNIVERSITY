@@ -1,0 +1,73 @@
+﻿:root {
+    --size: 33.3vw; /* one-third of the viewport width */
+}
+
+* {
+    /* Remove all default settings */
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    box-sizing: border-box;
+}
+
+.item1, .item2, .item3, .item4, .item5, .item6, .item7 {
+    height: var(--size);
+    
+    border-style: outset;
+    border-width: 5px;
+    border-color: rgb(173, 171, 24);
+
+}
+
+.item1, .item3, .item5 {
+    background-image: url(../image/chatgpt.jpg);
+    background-size: cover;
+    /* border: 1px solid red; */
+
+}
+
+
+.item2, .item4, .item6 {
+    background-image: url(../image/openai.jpg);
+    background-size: cover;
+}
+
+.item7{
+    /* height: var(--size); */
+    color: rgb(227, 231, 219);
+    background-color: rgb(65, 10, 10);
+    font: normal 6vw arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1:hover, .item3:hover, .item5:hover {
+        background-image: url(../image/openai.jpg);
+        background-size: cover;
+    }
+
+    .item2:hover, .item4:hover, .item6:hover {
+        background-image: url(../image/chatgpt.jpg);
+        background-size: cover;
+    }
+
+    @media (max-width: 768px) {
+        :root {
+           --size: 50vw; /* one-third of the viewport width */
+        }          
+    }
+
+    @media (max-width: 576px) {
+        :root {
+           --size: 100vw; /* one-third of the viewport width */
+        }  
+        
+        .item7{
+            /* height: var(--size); */
+            color: rgb(227, 231, 219);
+            background-color: rgb(65, 10, 10);
+            font: normal 11vw arial;
+            text-align: center;
+        }
+    }

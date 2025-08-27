@@ -1,0 +1,46 @@
+﻿body {
+    background-image: url('../image/bg10.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+article > header {
+    font-family: 'Anton', sans-serif;
+    background-image: linear-gradient(to right, brown, brown, brown, yellow, white, yellow, brown, brown, brown);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 15% 5% 0% 5%;
+    text-align: center;
+    font-size: 8vw;
+}
+
+section > div {
+    height: 250px;
+    box-shadow: 7px 7px #94b44f;
+    border: 1px solid white;
+    /*border-style:hidden;*/
+    color: white;
+    padding: 2vw;
+    margin: 1.5vw;
+    background-color: #100c3c70;
+}
+    section > div > header {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        font-size: 2em;
+    }
+
+@media (min-width: 576px) and (max-width: 768px) {
+    section > div {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 576px) {
+    section > div {
+        box-shadow: none;
+        border: none;
+    }
+}

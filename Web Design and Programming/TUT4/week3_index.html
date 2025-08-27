@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Week 3 Tutorial - Advanced HTML5 and CSS3</title>
+    <link rel="stylesheet" type="text/css" href="css/week3_style.css" />
+</head>
+<body>
+    <article>
+        <header id="main-header">WDP Tutorials</header>
+        <section>
+            <header>
+                <hr />
+                <h2>Text format and video</h2>
+                <hr />
+            </header>
+            <div class="container">
+                <div class="inner-text">
+                    <h1>Artificial Intelligence (AI)</h1>
+                    <p><b>Artificial intelligence (AI)</b>, in its broadest sense, is <i>intelligence exhibited by machines</i>, particularly computer systems. It is a field of research in computer science that develops and studies methods and software that <ins>enable machines to perceive their environment and use learning and intelligence to take actions</ins> that maximize their chances of achieving defined goals <abbr title="Russell, Stuart J.; Norvig, Peter. (2021). Artificial Intelligence: A Modern Approach (4th ed.). Hoboken: Pearson. ISBN 978-0134610993. LCCN 20190474."><sup>[1]</sup></abbr>. Such machines may be called AIs. <br /><i>Source</i>: Wikipedia. <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank">Learn more</a></p>
+                </div>
+                <video loop muted autoplay="autoplay" preload="auto">
+                    <source src="video/ai.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+        </section>
+        <section>
+            <header>
+                <hr />
+                <h2>Figure, img and figcaption</h2>
+                <hr />
+            </header>
+            <figure class="container">
+                <img src="image/gemini.jpg" />
+                <figcaption class="inner-text">
+                    <h1>Generative AI</h1>
+                    <p>Any time an AI technology is generating something on its own, it can be referred to as "generative AI." This umbrella term includes learning algorithms that make predictions as well as those that can use prompts to autonomously write articles and paint pictures. (<i>Source</i>: <ins>Techopedia</ins>)</p>
+                </figcaption>
+            </figure>
+            <figure class="container">
+                <img src="image/chatgpt.jpg" />
+                <figcaption class="inner-text">
+                    <h1>Generative AI</h1>
+                    <p>Any time an AI technology is generating something on its own, it can be referred to as "generative AI." This umbrella term includes learning algorithms that make predictions as well as those that can use prompts to autonomously write articles and paint pictures. (<i>Source</i>: <ins>Techopedia</ins>)</p>
+                </figcaption>
+            </figure>
+
+        </section>
+        <section>
+            <header>
+                <hr />
+                <h2>The input element with different attributes</h2>
+                <hr />
+            </header>
+            <div class="div-login">
+                <div>Username:</div>
+                <input type="text" placeholder="Enter your username" />
+                <div>Password:</div>
+                <input type="password" placeholder="Enter your password" />
+                <div>
+                    <input type="submit" />
+                    <input type="button" value="Forgot password?" />
+                </div>
+            </div>
+        </section>
+
+    </article>
+
+    <script src="js/script.js"></script>
+
+ 
+    <!-- <script>
+        // Create a tooltip element
+        const tooltip = document.createElement('span');
+        tooltip.className = 'tooltip';
+        document.body.appendChild(tooltip);
+
+        // Function to show the tooltip
+        function showTooltip(event) {
+            const tagName = event.target.tagName.toLowerCase();
+            tooltip.textContent = tagName;
+            tooltip.style.left = event.pageX + 'px';
+            tooltip.style.top = event.pageY - tooltip.offsetHeight + 'px';
+            tooltip.style.display = 'block';
+        }
+
+        // Function to hide the tooltip
+        function hideTooltip() {
+            tooltip.style.display = 'none';
+        }
+
+        // Add event listeners to all elements
+        document.querySelectorAll('*').forEach(element => {
+            element.addEventListener('mouseover', showTooltip);
+            element.addEventListener('mouseout', hideTooltip);
+        });
+    </script> -->
+
+
+</body>
+</html>
