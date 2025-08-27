@@ -7,10 +7,6 @@ from keras.datasets import fashion_mnist
 
 # Loading the data
 (X_train, y_train), (X_test, y_test) = fashion_mnist.load_data()
-className = [
-    'T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
-    'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot'
-]
 
 print("Training set size: ", X_train.shape)
 print("Testing set size: ", X_test.shape)
@@ -19,7 +15,7 @@ plt.figure(figsize=(10, 4))
 for i in range(10):
     plt.subplot(2, 5, i + 1)
     plt.imshow(X_train[i], cmap='gray')
-    plt.title(className[y_train[i]])
+    plt.title(f"Label: {y_train[i]}")
     plt.axis('off')
 
 #Flatten the data and typecast
@@ -30,7 +26,12 @@ X_test_flat = X_test.reshape(X_test.shape[0], -1).astype('float32') / 255.0
 kF = KFold(n_splits=5, shuffle=True, random_state=42)
 
 # Initialize models with L2 regularization
-modelL2 = LogisticRegression (max_iter=500, C=1.0, random_state=42)
+modelL2 = LogisticRegression (
+    penalty='l2',
+    max_iter=500, 
+    C=1.0, 
+    random_state=42
+)
 
 # Fitting and predicitng
 modelL2.fit(X_train_flat, y_train)
