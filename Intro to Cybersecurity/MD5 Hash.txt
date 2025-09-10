@@ -1,2 +1,0 @@
-Hash.txt MD5 hash: 99cdacf934a1a56a3ffb8aa306d1169f (without smiley face)
-modified Hash.txt MD5 hash: 2154db75e459328022638f8e3a2e99c5
