@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import joblib
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import KFold, cross_val_score
@@ -83,3 +84,9 @@ plt.suptitle('Incorrect Predictions')
 
 # Plot all graph at once
 plt.show()
+
+# Exporting the model
+joblib.dump(modelL2, "FashionMNIST.pkl")
+exportedModel = joblib.load("FashionMNIST.pkl")
+y_pred_exported = exportedModel.predict(X_test_flat)
+print(y_pred_exported[:10])
